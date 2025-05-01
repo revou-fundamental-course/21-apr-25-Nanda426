@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Konversi Suhu - Nanda</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Content -->
+<header>
+    <div class="header-container">
+        <img src="assets/logo.svg" alt="Temperature Converter Logo" class="logo" />
+        <h1 id="header-id">Website Konversi Suhu - Nanda</h1>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction -->
+        <section>
+            <h1>Selamat datang di Website Konversi Suhu</h1>
+            <p>Website ini dirancang untuk memudahkan pengguna dalam melakukan konversi antar satuan suhu, seperti Celcius, Fahrenheit, Reamur, dan Kelvin. Dengan antarmuka yang sederhana dan ramah pengguna, Anda dapat dengan cepat memperoleh hasil konversi yang akurat. Layanan ini cocok digunakan oleh pelajar, pendidik, maupun masyarakat umum yang memerlukan konversi suhu dalam kegiatan sehari-hari.</p>
+        
+        </section>
+
+        <!-- Form Konversi Suhu -->
+        <form>
+            <div>
+                <label for="konversi-input">Celcius (&deg;C):</label>
+            </div>
+
+            <div>
+                <textarea id="konversi-input" required></textarea>
+            </div>
+
+            <!-- Form Action -->
+            <div>
+                <button type="button" onclick="validateForm();">Konversi</button>
+                <button>Reset</button>
+                <button>Reverse</button>
+            </div>
+        </form>
+
+        <!-- Hasil Konversi Suhu -->
+        <section>
+            <div>
+                <label for="result-input">Fahrenheit (&deg;F):</label>
+            </div>
+
+            <div>
+                <textarea id="result-input" readonly></textarea>
+            </div>
+        </section>
+
+        <!-- Hasil Konversi Reaumur -->
+        <section>
+            <div>
+                <label for="result-reaumur">Reaumur (&deg;Re):</label>
+            </div>
+
+            <div>
+                <textarea id="result-reaumur" readonly></textarea>
+            </div>
+        </section>
+
+        <!-- Hasil Konversi Kelvin -->
+        <section>
+            <div>
+                <label for="result-kelvin">Kelvin (K):</label>
+            </div>
+
+            <div>
+                <textarea id="result-kelvin" readonly></textarea>
+            </div>
+        </section>
+
+        <!-- Penjelasan -->
+        <section>
+            <div>
+                <label for="calculate-detail">Cara Kalkulasi</label>
+            </div>
+
+            <div>
+                <textarea id="calculate-detail" readonly></textarea>
+            </div>
+        </section>
+
+        <!-- Informasi Tambahan -->
+        <section>
+            <header>
+                <h1>Cara Konversi Dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h1>
+            </header>
+
+            <hr />
+
+            <!-- Konten Informasi -->
+            <article>
+                <p>Suhu <span class="formula">S</span> dalam derajat Fahrenheit (&deg;F)</p>
+
+                <!-- Formula -->
+                <div class="formula">
+                    S<sub>(&deg;F)</sub> = S(<sub>(&deg;C)</sub> x 9/5) + 32
+                </div>
+                <div>
+                    atau
+                </div>
+                
+                <div class="formula">
+                    S<sub>(&deg;F)</sub> = S(<sub>(&deg;C)</sub> x 1,8) + 32
+                </div>
+
+            </article>
+        </section>
+
+        <!-- Informasi Tambahan Reaumur -->
+        <section>
+            <header>
+                <h1>Cara Konversi Dari Celcius (&deg;C) ke Reaumur (&deg;Re)</h1>
+            </header>
+
+            <hr />
+
+            <!-- Konten Informasi -->
+            <article>
+                <p>Suhu <span class="formula">S</span> dalam derajat Reaumur (&deg;Re)</p>
+
+                <!-- Formula -->
+                <div class="formula">
+                    S<sub>(&deg;Re)</sub> = S(<sub>(&deg;C)</sub> x 4/5)
+                </div>
+                <div>
+                    atau
+                </div>
+                
+                <div class="formula">
+                    S<sub>(&deg;Re)</sub> = S(<sub>(&deg;C)</sub> x 0,8)
+                </div>
+
+            </article>
+        </section>
+
+        <!-- Informasi Tambahan Kelvin -->
+        <section>
+            <header>
+                <h1>Cara Konversi Dari Celcius (&deg;C) ke Kelvin (K)</h1>
+            </header>
+
+            <hr />
+
+            <!-- Konten Informasi -->
+            <article>
+                <p>Suhu <span class="formula">S</span> dalam derajat Kelvin (K)</p>
+
+                <!-- Formula -->
+                <div class="formula">
+                    S<sub>(K)</sub> = S(<sub>(&deg;C)</sub> + 273.15)
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <h3>&copy; 2025 Nanda. All rights reserved.</h3>
+    </footer>
+
+    <!-- JavaScript External -->
+    <script src="js\script.js"></script>
+</body>
+
+</html>
